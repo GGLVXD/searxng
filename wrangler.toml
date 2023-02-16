@@ -1,0 +1,14 @@
+# Top-level configuration
+name = "ggsearch"
+main = "searx/webapp.py"
+compatibility_date = "2022-07-12"
+
+workers_dev = false
+route = { pattern = "ggsearch.eu.org/*", zone_name = "ggsearch.eu.org" }
+
+
+
+[env.staging]
+name = "ggsearch stanging"
+route = { pattern = "staging.ggsearch.eu.org/*", zone_name = "ggsearch.eu.org" }
+
